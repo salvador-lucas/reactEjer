@@ -1,10 +1,10 @@
 import React from 'react';
-import './DeleteButton.css';
+import './Button.css';
 
-const deleteButton = (props) => {
+const Button = (props) => {
   return (
     <button 
-      className="DeleteButton"
+    type="button" className={props.type}
       onClick={ props.click }
     >
       Delete
@@ -12,4 +12,4 @@ const deleteButton = (props) => {
   )
 }
 
-export default deleteButton;
+export default Button;
